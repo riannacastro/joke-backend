@@ -10,7 +10,18 @@ class JokesController < ApplicationController
     end
 
     def create
+        joke = Joke.new(joke_params)
+        if joke.save
+            render json: joke
+        else
+            render json: {error: "Could not save joke."}
+        end
     end
 
+    private
+    
+        def joke_params
+            params.require(:joke).permit(:joke, :user_id)
+        end
 
 end
