@@ -18,9 +18,9 @@ joke3 = Joke.create(joke: "Two SQL tables sit at the bar. A query approaches and
 joke4 = Joke.create(joke: "\"Honey, go to the store and buy some eggs.\"\n\"OK.\"\n\"Oh and while you're there, get some milk.\"\nHe never returned.", user: ri);
 joke5 = Joke.create(joke: "Knock knock.\nWho's there?\nRecursion.\nRecursion who?\nKnock knock.", user: ri);
 
-Comment.create(name: "Kathy", comment:"LOL", user: kathy, joke: joke1);
-Comment.create(name: "David", comment:"wait this one is funny hahahah", user: david, joke: joke3);
-Comment.create(name: "David", comment:"HAHAH WHAT", user: david, joke: joke5);
-Comment.create(name: "Angel", comment:"im crying omg LOL", user: angel, joke: joke4);
-Comment.create(name: "Jill", comment:"best one hands down", user: jill, joke: joke1);
-Comment.create(name: "Steve", comment:"DUDEEE LOLOLOLOL", user: steve, joke: joke3);
+Comment.create(name: "Kathy", comment:"LOL", joke: joke1);
+Comment.create(name: "David", comment:"wait this one is funny hahahah", joke: joke3);
+Comment.create(name: "David", comment:"HAHAH WHAT", joke: joke5);
+Comment.create(name: "Angel", comment:"im crying omg LOL", joke: joke4);
+Comment.create(name: "Jill", comment:"best one hands down", joke: joke1);
+Comment.create(name: "Steve", comment:"DUDEEE LOLOLOLOL", joke: joke3);
