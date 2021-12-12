@@ -11,6 +11,7 @@ class JokesController < ApplicationController
 
     def create
         joke = Joke.new(joke_params)
+        # binding.pry
         if joke.save
             render json: joke
         else
@@ -28,6 +29,7 @@ class JokesController < ApplicationController
     private
     
         def joke_params
+            
             params.require(:joke).permit(:joke)
         end
 
