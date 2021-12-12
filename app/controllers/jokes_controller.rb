@@ -10,18 +10,25 @@ class JokesController < ApplicationController
     end
 
     def create
-        joke = Joke.new
+        joke = Joke.new(joke_params)
         if joke.save
-            render json: {message: "Joke added."}
+            render json: joke
         else
             render json: {error: "Could not save joke."}
         end
     end
 
-    # private
+    def destroy
+        joke = Joke.find_by_id(params[:id])
+        joke.destroy
+        render json: {message: "Joke deleted."}
+    end
+
+
+    private
     
-    #     def joke_params
-    #         params.require(:joke).permit(:joke)
-    #     end
+        def joke_params
+            params.require(:joke).permit(:joke)
+        end
 
 end
