@@ -1,24 +1,31 @@
-# README
+# Jokester API
+For my final project at Flatiron School, I created a Jokester application. You will be able to view different jokes, add a new joke, and delete a joke. You can learn more about the reasoning behind the creation of the app by clicking the "about" page. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
 
-Things you may want to cover:
+1. Download this repository
+2. open up terminal
+    1. run `bundle`
+    2. run `rails db:create`
+    3. run `rails db:migrate`
+    4. run `rails s` to start backend server on localhost:3000
+3. click link to frontend repository and download instructions: https://github.com/riannacastro/joke-frontend
 
-* Ruby version
 
-* System dependencies
+## Usage
 
-* Configuration
+Once you followed the steps above and have the server running, you can go to localhost:3000/jokes to view data.
 
-* Database creation
+To view the JSON objects easily, I would recommend downloading a chrome extension.
 
-* Database initialization
+## Contributing
 
-* How to run the test suite
+Contributing Bug reports and pull requests are welcome on GitHub at https://github.com/riannacastro/joke-backend. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the code of conduct.
 
-* Services (job queues, cache servers, search engines, etc.)
+## License
 
-* Deployment instructions
+The gem is available as open source under the terms of the MIT License.
 
-* ...
+## Code of Conduct
+
+Everyone interacting in the joke-backend project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
