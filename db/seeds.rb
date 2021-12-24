@@ -18,9 +18,9 @@ Joke.create(joke: "Two SQL tables sit at the bar. A query approaches and asks, \
 Joke.create(joke: "\"Honey, go to the store and buy some eggs.\"\n\"OK.\"\n\"Oh and while you're there, get some milk.\"\nHe never returned.");
 Joke.create(joke: "Knock knock.\nWho's there?\nRecursion.\nRecursion who?\nKnock knock.");
 
-# Comment.create(name: "Kathy", comment:"LOL", joke: joke1);
-# Comment.create(name: "David", comment:"wait this one is funny hahahah", joke: joke3);
-# Comment.create(name: "David", comment:"HAHAH WHAT", joke: joke5);
-# Comment.create(name: "Angel", comment:"im crying omg LOL", joke: joke4);
-# Comment.create(name: "Jill", comment:"best one hands down", joke: joke1);
-# Comment.create(name: "Steve", comment:"DUDEEE LOLOLOLOL", joke: joke3);
+Request.create(username: "Anonymous", request:"Christmas jokes please!!");
+Request.create(username: "Anonymous", request:"Dad Puns are the best");
+Request.create(username: "Anonymous", request:"I love these programming jokes the best");
+Request.create(username: "Anonymous", request:"Jokes about cars");
+Request.create(username: "Anonymous", request:"Can you please add star wars");
+Request.create(username: "Anonymous", request:"Corny jokes! Those are my favorite haha");
